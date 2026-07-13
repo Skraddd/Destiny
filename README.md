@@ -52,6 +52,7 @@ This version instead creates a **local server** on your computer, allowing the p
 **Note:** The launcher is **not standalone**. You must keep all project files, as they are required to host the local server.
 
 ---
+---
 
 # Installation
 
@@ -63,7 +64,9 @@ Download it from Microsoft:
 
 https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48
 
- First-Time Setup
+---
+
+# First-Time Setup
 
 After downloading the project:
 
@@ -73,7 +76,9 @@ After downloading the project:
    - `rift`
    - the web interface build
 
- Running the Application
+---
+
+# Running the Application
 
 ## Option 1 (Recommended)
 
@@ -92,7 +97,9 @@ Requirements:
 - Restore all NuGet packages.
 - Build the project in **Release** configuration.
 
-Connecting Your Phone
+---
+
+# Connecting Your Phone
 
 1. Launch **Conduit.exe**.
 2. The application will display:
@@ -103,6 +110,7 @@ Connecting Your Phone
 
 > **If the QR code or IP does not appear, make sure the League of Legends client is running.**
 
+---
 ---
 
 # Server Console
