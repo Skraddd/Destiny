@@ -27,6 +27,7 @@ The original project has its own server host to make the phone<--->pc (conduit.e
 The launcher is not a standalone and you need all the files to use the application, since you have to host your own server
 
 How to use:
+- .NET Framework 4 is needed,  you can download it from microsoft (https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48)
 - After first download, open "prepare-destiny.bat" to install dependencies for "web", "rift" and build web interface.
 - Option 1: Use the Conduit.exe file in "\Destinyv1\conduit\bin\Release"
 - Option 2: Compile your own version with VisualStudio (don't forget NuGet packages), set release and compile.
