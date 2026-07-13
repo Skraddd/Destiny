@@ -1,44 +1,176 @@
-This project is fork of https://github.com/molenzwiebel/Mimic (archieved)
-Since the project was archieved and the Overwolf version of the app has not been updated in years i updated the original code, fixing bugs and adding new features
+# Destiny
 
-List of added features:
-- Autoaccept games option
-- Swap roles and pick position
-- Arena mode "bravery" pick option
+This project is a fork of the archived project:  
+https://github.com/molenzwiebel/Mimic
 
-List of fixes:
-- Aram pick and bench champion select
-- Fixed runes pages and added new runes
-- Friend list and invites
-- Ban selection 
-- Removed authorization for first correction (not needed for local server version)
-- New gamemodes in lobby creation
+Since the original project has been archived and the Overwolf version has not been updated for years, I updated the original code by fixing bugs and adding new features.
 
-List of all features offered by the application:
+---
+
+# Added Features
+
+- Auto-accept games
+- Swap roles and pick position during Champion Select
+- Arena mode **Bravery** pick option
+
+---
+
+# Bug Fixes
+
+- Fixed ARAM champion pick and bench selection
+- Updated rune pages and added the latest runes
+- Fixed friends list and invitations
+- Fixed champion ban selection
+- Removed first-time authorization (not needed for the local server version)
+- Added support for new game modes in lobby creation
+
+---
+
+# Features
+
 - Create and leave lobbies
-- Start / Stop queues
-- Accept / Refuse games
-- Autoaccept option
-- Champion Select (pick, ban, swap role and position, runes, summoner spells)
+- Start and stop matchmaking queues
+- Accept or decline matches
+- Auto-accept matches
+- Champion Select
+  - Pick champions
+  - Ban champions
+  - Swap roles
+  - Swap pick order
+  - Edit runes
+  - Change summoner spells
 - Skin selector
 
-Important Changes:
-The original project has its own server host to make the phone<--->pc (conduit.exe) connection possible, but this program creates a LOCAL server in order to make that possible.
-The launcher is not a standalone and you need all the files to use the application, since you have to host your own server
+---
 
-How to use:
-- .NET Framework 4 is needed,  you can download it from microsoft (https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48)
-- After first download, open "prepare-destiny.bat" to install dependencies for "web", "rift" and build web interface.
-- Option 1: Use the Conduit.exe file in "\Destinyv1\conduit\bin\Release"
-- Option 2: Compile your own version with VisualStudio (don't forget NuGet packages), set release and compile.
-- The program will show you the local ip (and QRcode) to connect to. The ip should be your pc's local ip. If the code does not appear you should open your lol client
-- Use any browser on phone and go to the site and enter the code. 
-  
-The local server prompt in the Conduit.exe file shows the local server logs. You can use it to identify problems or to check new connections
-If there are any problems with connection you probably have to open router ports "8080" and "51001". If you do this you should also setup your pc with a static ip in the windows settings. (DHCP can cause problems as the machine's ip can change)
+# Important Changes
 
-Note: the device authorization window of the original version has been removed since it caused problems, since the local connection is not secure (HTTPS), and it was needed to make the pop-up window appear
+The original project relied on its own remote server to allow communication between the mobile device and the PC (`Conduit.exe`).
 
-Known minor issues:
-- Conduit.exe opens new windows when new mobile connection happen. Tip: to avoid problems you should have only one windows, you can close the other one.
-- Sometimes when you find match or create / join lobbies, the web app can be stuck on the previous page. Fix: refresh the page and click connect, the new page will be loaded without problems
+This version instead creates a **local server** on your computer, allowing the phone and PC to communicate directly over your local network.
+
+**Note:** The launcher is **not standalone**. You must keep all project files, as they are required to host the local server.
+
+---
+
+# Installation
+
+## Requirements
+
+- **.NET Framework 4.x** (4.8 recommended)
+
+Download it from Microsoft:
+
+https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48
+
+---
+
+# First-Time Setup
+
+After downloading the project:
+
+1. Run **`prepare-destiny.bat`**.
+2. This script installs all required dependencies for:
+   - `web`
+   - `rift`
+   - the web interface build
+
+---
+
+# Running the Application
+
+## Option 1 (Recommended)
+
+Run:
+
+```
+Destinyv1/conduit/bin/Release/Conduit.exe
+```
+
+## Option 2
+
+Compile the project yourself using **Visual Studio**.
+
+Requirements:
+
+- Restore all NuGet packages.
+- Build the project in **Release** configuration.
+
+---
+
+# Connecting Your Phone
+
+1. Launch **Conduit.exe**.
+2. The application will display:
+   - your local IP address
+   - a QR code
+3. Scan the QR code or open the displayed address from your phone using any web browser.
+4. Enter the connection code shown by the application.
+
+> **If the QR code or IP does not appear, make sure the League of Legends client is running.**
+
+---
+
+# Server Console
+
+The console window opened by **Conduit.exe** displays the local server logs.
+
+You can use it to:
+
+- monitor incoming connections
+- identify connection problems
+- debug server activity
+
+---
+
+# Network Configuration
+
+If you experience connection issues, you may need to forward the following ports on your router:
+
+- **8080**
+- **51001**
+
+It is also recommended to configure your PC with a **static local IP address**.
+
+Using DHCP may cause the computer's local IP address to change, preventing the phone from connecting.
+
+---
+
+# Authorization Changes
+
+The original project displayed a device authorization window before allowing connections.
+
+This feature has been removed because:
+
+- it caused connection problems
+- local connections are not encrypted with HTTPS
+- it is unnecessary for a local-only server
+
+---
+
+# Known Issues
+
+### Multiple Console Windows
+
+Each new mobile connection may open an additional `Conduit.exe` console window.
+
+**Workaround:** simply close the extra console windows and keep only one open.
+
+---
+
+### Web Interface Doesn't Update
+
+Occasionally, after:
+
+- finding a match
+- creating a lobby
+- joining a lobby
+
+the web interface may remain on the previous page.
+
+**Fix:**
+
+1. Refresh the browser page.
+2. Press **Connect** again.
+
+The correct page should load normally.
