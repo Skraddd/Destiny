@@ -63,7 +63,7 @@ Download it from Microsoft:
 
 https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48
 
-# First-Time Setup
+ First-Time Setup
 
 After downloading the project:
 
@@ -73,7 +73,7 @@ After downloading the project:
    - `rift`
    - the web interface build
 
-# Running the Application
+ Running the Application
 
 ## Option 1 (Recommended)
 
@@ -92,7 +92,7 @@ Requirements:
 - Restore all NuGet packages.
 - Build the project in **Release** configuration.
 
-# Connecting Your Phone
+Connecting Your Phone
 
 1. Launch **Conduit.exe**.
 2. The application will display:
