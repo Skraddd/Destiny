@@ -50,7 +50,7 @@ if errorlevel 1 (
     exit
 )
 echo npm detected.
-npm -v
+call npm -v
 echo.
 
 :: -------------------------------------------------
@@ -68,7 +68,7 @@ if errorlevel 1 (
     )
 )
 echo Yarn detected.
-yarn -v
+call yarn -v
 echo.
 
 :: -------------------------------------------------
