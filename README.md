@@ -63,8 +63,6 @@ Download it from Microsoft:
 
 https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48
 
----
-
 # First-Time Setup
 
 After downloading the project:
@@ -74,8 +72,6 @@ After downloading the project:
    - `web`
    - `rift`
    - the web interface build
-
----
 
 # Running the Application
 
@@ -95,8 +91,6 @@ Requirements:
 
 - Restore all NuGet packages.
 - Build the project in **Release** configuration.
-
----
 
 # Connecting Your Phone
 
