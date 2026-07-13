@@ -12,6 +12,7 @@ List of fixes:
 - Friend list and invites
 - Ban selection 
 - Removed authorization for first correction (not needed for local server version)
+- New gamemodes in lobby creation
 
 List of all features offered by the application:
 - Create and leave lobbies
@@ -26,11 +27,11 @@ The original project has its own server host to make the phone<--->pc (conduit.e
 The launcher is not a standalone and you need all the files to use the application, since you have to host your own server
 
 How to use:
-- After first download, open "prepare-destiny.bat" to install dependencies for "web" and "rift" and build web interface.
+- After first download, open "prepare-destiny.bat" to install dependencies for "web", "rift" and build web interface.
 - Option 1: Use the Conduit.exe file in "\Destinyv1\conduit\bin\Release"
-- Option 2: Compile your own version with VisualStudio (don't forget NuGets packages), set release and compile.
-- The program should show you the local ip (and QRcode) to connect to. The ip should be your pc's local ip
-- Use any browser on phone and go to the site and enter the code. If the code does not appear you should open your lol client
+- Option 2: Compile your own version with VisualStudio (don't forget NuGet packages), set release and compile.
+- The program will show you the local ip (and QRcode) to connect to. The ip should be your pc's local ip. If the code does not appear you should open your lol client
+- Use any browser on phone and go to the site and enter the code. 
   
 The local server prompt in the Conduit.exe file shows the local server logs. You can use it to identify problems or to check new connections
 If there are any problems with connection you probably have to open router ports "8080" and "51001". If you do this you should also setup your pc with a static ip in the windows settings. (DHCP can cause problems as the machine's ip can change)
