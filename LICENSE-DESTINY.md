@@ -17,7 +17,7 @@ The full legal text of the license follows below and is authoritative.
 
 <https://polyformproject.org/licenses/noncommercial/1.0.0>
 
-Copyright (c) 2026 [YOUR NAME OR HANDLE HERE]
+Copyright (c) 2026 [Skraddd]
 
 Permission is hereby granted, free of charge, to any person or organization
 obtaining a copy of the software and accompanying documentation covered by
