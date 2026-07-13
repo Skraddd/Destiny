@@ -1,5 +1,4 @@
 ![Destiny Logo](assets/mimic-logo.png?raw=true)
-# Destiny
 
 This project is a fork of the archived project:  
 https://github.com/molenzwiebel/Mimic
