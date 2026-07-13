@@ -66,29 +66,11 @@ https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48
 
 ---
 
-# First-Time Setup
-
-After downloading the project:
-
-1. Run **`prepare-destiny.bat`**.
-2. This script installs all required dependencies for:
-   - `web`
-   - `rift`
-   - `npm` (you will have to run the script two times if its not already installed
-   - `YARN`
-   - the web interface build
-
----
-
 # Running the Application
 
 ## Option 1 (Recommended)
 
-Run:
-
-```
-Destinyv1/conduit/bin/Release/Conduit.exe
-```
+Download the setup and run it
 
 ## Option 2
 
