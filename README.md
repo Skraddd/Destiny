@@ -74,7 +74,7 @@ After downloading the project:
 2. This script installs all required dependencies for:
    - `web`
    - `rift`
-   - `npm`
+   - `npm` (you will have to run the script two times if its not already installed
    - `YARN`
    - the web interface build
 
